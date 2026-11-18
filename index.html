@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Giga Pet - Buddy</title>
+    <meta name="description" content="Take care of your virtual Giga Pet.">
+    <link rel="icon" href="images/hound.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js" integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00=" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header><h1>This is your Giga Pet</h1></header>
+    <main>
+      <section class="pet-image-container">
+        <img class="pet-image" src="images/hound.jpg" alt="Your virtual pet Buddy">
+      </section>
+      <section class="dashboard">
+        <div>Name: <strong><span class="name"></span></strong></div>
+        <div>Weight: <strong><span class="weight"></span> pounds</strong></div>
+        <div>Happiness: <strong><span class="happiness"></span> tail wags (per min)</strong></div>
+        <div>Energy: <strong><span class="energy"></span> points</strong></div>
+        <div class="button-container">
+          <button class="treat-button">Treat</button>
+          <button class="play-button">Play</button>
+          <button class="exercise-button">Exercise</button>
+          <button class="rest-button">Rest</button>
+        </div>
+        <p class="pet-message" role="status" aria-live="polite"></p>
+      </section>
+    </main>
+  </body>
+</html>
